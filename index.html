@@ -6,6 +6,25 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript">
+$(function() 
+{
+$(document).ready(function()
+{
+$.getJSON("space.json",function(data)
+{
+$.each(data.posts, function(i,data)
+{
+var div_data =
+"<div ><a href='"+data.url+"'>"+data.title+"</a></div>";
+$(div_data).appendTo("#9lessonsLinks");
+});
+}
+);
+return false;
+});
+});
+</script>
 </head> 
 <body> 
 
@@ -16,7 +35,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>Interactive Node 1</p>		
+		<p><div id="9lessonsLinks"></div></p>		
 	</div><!-- /content -->
 
 </div><!-- /page -->

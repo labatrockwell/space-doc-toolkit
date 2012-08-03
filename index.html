@@ -16,7 +16,7 @@ $.getJSON("space.js",function(data)
 $.each(data.spimes, function(i,data)
 {
 var li_data =
-"<li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><p><strong>"+data.spime.description+"</strong></p><p></p><p class=\"ui-li-aside\"><strong>"+data.spime.publish.name+"</strong>AM</p></a></li>";
+"<li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><p><strong>"+data.spime.description+"</strong></p></a></li>";
 $(li_data).appendTo("#spaces");
 });
 }

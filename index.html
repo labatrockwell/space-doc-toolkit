@@ -16,10 +16,7 @@ $.getJSON("space.js",function(data)
 $.each(data.spimes, function(i,data)
 {
 var div_data =
-"<li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><a href='"+data.spime.description+"'>"+data.spime.name+"<p><strong>Re: This weekend in Maine</strong></p>
-						<p>Hey little buddy, sorry but I can't make it up to vacationland this weekend. Maybe next weekend?</p>
-						<p class=\"ui-li-aside\"><strong>6:24</strong>AM</p>
-						</a></li>";
+"<li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><a href='"+data.spime.description+"'>"+data.spime.name+"<p><strong>weekend</strong></p><p></p><p class=\"ui-li-aside\"><strong>624</strong>AM</p></a></li>";
 $(li_data).appendTo("#spaces");
 });
 }

@@ -68,7 +68,7 @@
         },
         {
             "spime": {
-                "-name": "Nerf Gun",
+                "name": "Nerf Gun",
                 "description": "sdaklfjsdfjsdlkfdf ",
                 "publish": {
                     "message": [

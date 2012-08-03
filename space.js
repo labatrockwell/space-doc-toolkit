@@ -2,23 +2,23 @@
     "spimes": [
         {
             "spime": {
-                "-name": "LED Sign",
+                "name": "LED Sign",
                 "description": "sdaklfjsdfjsdlkfdf ",
                 "publish": {
                     "message": [
                         {
-                            "-name": "partyModeOn",
-                            "-type": "boolean",
+                            "name": "partyModeOn",
+                            "type": "boolean",
                             "#default": "false"
                         },
                         {
-                            "-name": "currentColor",
-                            "-type": "number",
+                            "name": "currentColor",
+                            "type": "number",
                             "#default": "1023"
                         },
                         {
-                            "-name": "currentMessage",
-                            "-type": "string",
+                            "name": "currentMessage",
+                            "type": "string",
                             "#default": "not-updated"
                         }
                     ]
@@ -26,16 +26,16 @@
                 "subscribe": {
                     "message": [
                         {
-                            "-name": "partyMode",
-                            "-type": "boolean"
+                            "name": "partyMode",
+                            "type": "boolean"
                         },
                         {
-                            "-name": "color",
-                            "-type": "number"
+                            "name": "color",
+                            "type": "number"
                         },
                         {
-                            "-name": "text",
-                            "-type": "string"
+                            "name": "text",
+                            "type": "string"
                         }
                     ]
                 }
@@ -43,23 +43,23 @@
         },
         {
             "spime": {
-                "-name": "Button",
+                "name": "Button",
                 "description": "sdaklfjsdfjsdlkfdf ",
                 "publish": {
                     "message": [
                         {
-                            "-name": "buttonPress",
-                            "-type": "boolean",
+                            "name": "buttonPress",
+                            "type": "boolean",
                             "#default": "false"
                         },
                         {
-                            "-name": "numberPresses",
-                            "-type": "number",
+                            "name": "numberPresses",
+                            "type": "number",
                             "#default": "0"
                         },
                         {
-                            "-name": "hashtag",
-                            "-type": "string",
+                            "name": "hashtag",
+                            "type": "string",
                             "#default": "#pressed"
                         }
                     ]
@@ -73,8 +73,8 @@
                 "publish": {
                     "message": [
                         {
-                            "-name": "hasAmmo",
-                            "-type": "boolean",
+                            "name": "hasAmmo",
+                            "type": "boolean",
                             "#default": "false"
                         }
                     ]
@@ -82,12 +82,12 @@
                 "subscribe": {
                     "message": [
                         {
-                            "-name": "fire",
-                            "-type": "boolean"
+                            "name": "fire",
+                            "type": "boolean"
                         },
                         {
-                            "-name": "killingword",
-                            "-type": "string"
+                            "name": "killingword",
+                            "type": "string"
                         }
                     ]
                 }

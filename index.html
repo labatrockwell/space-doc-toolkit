@@ -16,7 +16,7 @@ $.getJSON("space.js",function(data)
 $.each(data.spimes, function(i,data)
 {
 var div_data =
-"<div ><a href='"+data.spime.description+"'>"+data.description+"</a></div>";
+"<div ><a href='"+data.spime.description+"'>"+data.spime.name+"</a></div>";
 $(div_data).appendTo("#9lessonsLinks");
 });
 }

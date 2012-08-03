@@ -16,7 +16,7 @@ $.getJSON("space.js",function(data)
 $.each(data.spimes, function(i,data)
 {
 var li_data =
-"<li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><p><strong>"+data.spime.description+"</strong></p><p></p><p class=\"ui-li-aside\"><strong>624</strong>AM</p></a></li>";
+"<li data-role=\"list-divider\">"+data.spime.name+"<span class=\"ui-li-count\">3</span></li><li><a href=\"index.html\"><h3>"+data.spime.name+"</h3><p><strong>"+data.spime.description+"</strong></p><p></p><p class=\"ui-li-aside\"><strong>624</strong>AM</p></a></li>";
 $(li_data).appendTo("#spaces");
 });
 }
@@ -37,7 +37,7 @@ return false;
 	<div data-role="content">	
 		<div class="content-primary">
 			<ul data-role="listview" data-theme="d" data-divider-theme="d">
-				<li data-role="list-divider">Spimes <span class="ui-li-count">3</span></li>
+				<li data-role="list-divider"><span class="ui-li-count">3</span></li>
 					<li id="spaces"></li>
 			</ul>
 		</div>

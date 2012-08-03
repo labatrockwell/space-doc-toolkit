@@ -13,10 +13,10 @@ $(document).ready(function()
 {
 $.getJSON("space.js",function(data)
 {
-$.each(data.posts, function(i,data)
+$.each(data.spime, function(i,data)
 {
 var div_data =
-"<div ><a href='"+data.url+"'>"+data.title+"</a></div>";
+"<div ><a href='"+data.description+"'>"+data.title+"</a></div>";
 $(div_data).appendTo("#9lessonsLinks");
 });
 }

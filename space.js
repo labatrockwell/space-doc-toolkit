@@ -3,7 +3,7 @@
         {
             "spime": {
                 "name": "LED Sign",
-                "description": "sdaklfjsdfjsdlkfdf ",
+                "description": "This is RGB controllable LED sign. It's physical dimenstions are about 5x26 inches. It can support about 20 characters depending on the font and configuration.",
                 "publish": {
                     "message": [
                         {
@@ -44,7 +44,7 @@
         {
             "spime": {
                 "name": "Button",
-                "description": "sdaklfjsdfjsdlkfdf ",
+                "description": "This is a magical button, not unlike the big red button in Ren and Stimpy. We dare you not to push it. ",
                 "publish": {
                     "message": [
                         {
@@ -69,7 +69,7 @@
         {
             "spime": {
                 "name": "Nerf Gun",
-                "description": "sdaklfjsdfjsdlkfdf ",
+                "description": "An internet controlled Nerf gun. Pretty much the nerd dream. Use it to fire \"messages\" to those in the LAB. ",
                 "publish": {
                     "message": [
                         {

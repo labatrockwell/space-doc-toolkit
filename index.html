@@ -16,8 +16,8 @@ $.getJSON("space.js",function(data)
 {
 $.each(data.spimes, function(i,data)
 {
-var li_data ="<li><a href=\"\"><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>";
-$(li_data).appendTo("#spaces");
+var div_data ="<li><a href=\"\"><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>";
+$(div_data).appendTo("#spaces");
 });
 }
 );
@@ -39,7 +39,7 @@ return false;
 			<li><a href=""><h3>space1</h3><p>fjsdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
 			<li><a href=""><h3>space2</h3><p>fjdsf  dsff  fsd sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
 			<li><a href=""><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
-			<li id="spaces"></li>
+			<li><div id="spaces"></div></li>
 		</ul>	
 	</div><!-- /content -->
 

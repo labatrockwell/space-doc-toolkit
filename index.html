@@ -1,50 +1,41 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-	<title>Hello Space</title> 
+<!doctype html>
+<html>
+<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
 
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-	<script type="text/javascript">
-$(function() 
-{
-$(document).ready(function()
-{
-$.getJSON("space.js",function(data)
-{
-$.each(data.spimes, function(i,data)
-{
-var div_data ="<li><a href=\"\"><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>";
-$(div_data).appendTo("#spaces");
-});
-}
-);
-return false;
-});
-$('#myPage').page();
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div  data-role="content">
+            <ul id="results" class="list" data-role="listview">
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+$.getJSON('space.js', function(data) {
+    var items = [];
+    for(var i = 0; i < data.table.rows.length; i++) {
+        $.each(data.table.rows[i], function(key, val) {
+            items.push('<li class="' + data.table.cols[key] + ' listitem"><i>' + data.table.cols[key]+'</i>: '+ val + '</li>');
+        });
+        $('<li/>', {
+            'id': 'mainItem' + i
+        }).appendTo('#results');
+        $('#mainItem' + i).text(data.table.rows[i][1]);
+        $('<ul/>', {
+            'id': 'location' + i,
+            'class': 'list',
+            html: items.join('')
+        }).appendTo('#mainItem' + i);
+        items = [];
+    }
+    $('.list').listview('refresh');
 });
 </script>
-</head> 
-<body> 
-
-<div data-role="page" id="home">
-
-	<div data-role="header">
-		<h1>LAB Back Bay</h1>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<ul data-role="listview" data-theme="c">
-			<li><a href=""><h3>space1</h3><p>fjsdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
-			<li><a href=""><h3>space2</h3><p>fjdsf  dsff  fsd sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
-			<li><a href=""><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>
-			<li><div id="spaces"></div></li>
-		</ul>	
-	</div><!-- /content -->
-
-</div><!-- /page -->
-<!-- <p><strong>"+data.spime.description+"</strong></p> -->
-</body>
 </html>
+
+

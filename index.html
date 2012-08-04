@@ -17,7 +17,7 @@ $.getJSON("space.js",function(data)
 $.each(data.spimes, function(i,data)
 {
 var li_data =
-"<li><h3>"+data.spime.name+"</h3></li>";
+"<li><a href=\"\">"+data.spime.name+"</a></li>";
 $(li_data).appendTo("#spaces");
 });
 }
@@ -36,7 +36,7 @@ return false;
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<ul data-role="listview">
+		<ul data-role="listview" data-theme="c">
 			<li id="spaces"></li>
 		</ul>	
 	</div><!-- /content -->

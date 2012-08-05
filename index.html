@@ -28,13 +28,13 @@
 	<script type="text/javascript">
 $(function() 
 {
-$(document).ready(function()
-{
-$.getJSON("space.js",function(data)
-{
-$.each(data.spimes, function(i,data)
-{
-var div_data ="<li><a href=\"\"><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>";
+	$(document).ready(function()
+	{
+		$.getJSON("space.js",function(data)
+	{
+		$.each(data.spimes, function(i,data)
+	{
+		var div_data ="<li><a href=\"\"><h3>space3</h3><p>sdflj sdlkfsk flksfhsd fsdklf skjlsf </p></a></li>";
 $(div_data).appendTo("#ulresults");
 });
 }
@@ -42,7 +42,10 @@ $(div_data).appendTo("#ulresults");
 return false;
 });
 $('#myPage').page();
+$('#ulresults').trigger('create');
 });
+
+
 </script>
 
 </div><!-- /page -->
